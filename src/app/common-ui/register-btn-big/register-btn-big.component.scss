@@ -1,0 +1,30 @@
+.btn-block {
+    align-items: center;
+    display: flex;
+    font-family: "Nunito Sans";
+    gap: 15px;
+    justify-content: center;
+    height: 92px;
+    margin: 30px auto;
+    padding: 13px 22px;
+    width: 380px;
+}
+
+.btn-block img {
+    height: 24px;
+    width: 24px;
+}
+
+.reg-btn {
+    align-items: center;
+    background: var(--purple-color);
+    border: none;
+    border-radius: 60px;
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    line-height: 21.82px;
+    padding: 10px;
+    width: 256px;
+}

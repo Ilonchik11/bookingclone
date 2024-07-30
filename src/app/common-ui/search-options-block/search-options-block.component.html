@@ -1,0 +1,402 @@
+<div>
+    <div class="see-map">
+        See the map
+        <img src="/assets/svg/location.svg" alt="location">
+    </div>
+    <div class="options">
+        <div class="price">
+            <div class="header">Price</div>
+            <div class="range">
+                <div>76$ night</div>
+                <div>230$ night</div>
+            </div>
+            <div class="slider-container">
+                <div class="slider-track"></div>
+                <div
+                  class="slider-thumb"
+                  [ngStyle]="{ left: thumbPosition + 'px' }"
+                  (mousedown)="startDragging($event)"
+                ></div>
+              </div>
+        </div>
+
+        <div class="attractions">
+            <div class="search-attractions">
+                Attractions near...
+                <img src="/assets/svg/lens.svg">
+            </div>
+        </div>
+
+        <div class="rating">
+            <div class="header">Rating</div>
+            <div class="rating-options">
+                <div class="single-rating-option">
+                    <div>
+                        <input type="radio" id="rating9" name="rating-options" value="9">
+                        <label for="rating9">9+</label>
+                    </div>
+                    <div>99</div>
+                </div>  
+  
+                <div class="single-rating-option">
+                    <div>
+                        <input type="radio" id="rating8" name="rating-options" value="8">
+                        <label for="rating8">8+</label>
+                    </div>
+                    <div>124</div>
+                </div>
+  
+                <div class="single-rating-option">
+                    <div>
+                        <input type="radio" id="rating7" name="rating-options" value="7">
+                        <label for="rating7">7+</label>
+                    </div>
+                    <div>198</div>
+                </div>
+  
+                <div class="single-rating-option">
+                    <div>
+                        <input type="radio" id="rating6" name="rating-options" value="6">
+                        <label for="rating6">6+</label>
+                    </div>
+                    <div>345</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular">
+            <div class="header">Popular</div>
+            <div class="popular-options">
+                <div class="single-popular-option">
+                    <div>
+                        <input type="radio" id="city-centre" name="popular-options" value="city-centre">
+                        <label for="city-centre">City centre</label>
+                    </div>
+                    <div>435</div>
+                </div>  
+  
+                <div class="single-popular-option">
+                    <div>
+                        <input type="radio" id="popular-places" name="popular-options" value="popular-places">
+                        <label for="popular-places">Popular places</label>
+                    </div>
+                    <div>937</div>
+                </div>
+  
+                <div class="single-popular-option">
+                    <div>
+                        <input type="radio" id="best-rating" name="popular-options" value="best-rating">
+                        <label for="best-rating">Best rating</label>
+                    </div>
+                    <div>45</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stars">
+            <div class="header">Stars</div>
+            <div class="stars-options">
+                <div class="single-stars-option">
+                    <div class="stars-row">
+                        <input type="radio" id="stars5" name="stars-options" value="stars5">
+                        <label for="stars5">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                        </label>
+                    </div>
+                    <div>135</div>
+                </div> 
+
+                <div class="single-stars-option">
+                    <div class="stars-row">
+                        <input type="radio" id="stars4" name="stars-options" value="stars4">
+                        <label for="stars4">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                        </label>
+                    </div>
+                    <div>37</div>
+                </div> 
+
+                <div class="single-stars-option">
+                    <div class="stars-row">
+                        <input type="radio" id="stars3" name="stars-options" value="stars3">
+                        <label for="stars3">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                        </label>
+                    </div>
+                    <div>45</div>
+                </div> 
+
+                <div class="single-stars-option">
+                    <div class="stars-row">
+                        <input type="radio" id="stars2" name="stars-options" value="stars2">
+                        <label for="stars2">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                        </label>
+                    </div>
+                    <div>89</div>
+                </div> 
+
+                <div class="single-stars-option">
+                    <div class="stars-row">
+                        <input type="radio" id="stars1" name="stars-options" value="stars1">
+                        <label for="stars1">
+                            <img src="/assets/svg/star-rounded-gray.svg">
+                        </label>
+                    </div>
+                    <div>112</div>
+                </div> 
+            </div>
+        
+        </div>
+
+        <div class="near">
+            <div class="header">Near</div>
+            <div class="near-options">
+                <div class="single-near-option">
+                    <div>
+                        <input type="radio" id="metro" name="near-options" value="metro">
+                        <label for="metro">Metro</label>
+                    </div>
+                    <div>56</div>
+                </div>
+
+                <div class="single-near-option">
+                    <div>
+                        <input type="radio" id="airport" name="near-options" value="airport">
+                        <label for="airport">Airport</label>
+                    </div>
+                    <div>34</div>
+                </div>
+
+                <div class="single-near-option">
+                    <div>
+                        <input type="radio" id="station" name="near-options" value="station">
+                        <label for="station">Station</label>
+                    </div>
+                    <div>89</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="facilities">
+            <div class="header">Facilities</div>
+            <div class="facilities-options">
+                <div class="single-facilities-option">
+                    <div>
+                        <input type="radio" id="wifi" name="facilities-options" value="wifi">
+                        <label for="wifi">Wi-Fi</label>
+                    </div>
+                    <div>1135</div>
+                </div>
+
+                <div class="single-facilities-option">
+                    <div>
+                        <input type="radio" id="restaurants" name="facilities-options" value="restaurants">
+                        <label for="restaurants">Restaurants</label>
+                    </div>
+                    <div>337</div>
+                </div>
+
+                <div class="single-facilities-option">
+                    <div>
+                        <input type="radio" id="247" name="facilities-options" value="247">
+                        <label for="247">24/7</label>
+                    </div>
+                    <div>345</div>
+                </div>
+
+                <div class="single-facilities-option">
+                    <div>
+                        <input type="radio" id="foodinhotel" name="facilities-options" value="foodinhotel">
+                        <label for="foodinhotel">Food in the hotel</label>
+                    </div>
+                    <div>589</div>
+                </div>
+
+                <div class="single-facilities-option">
+                    <div>
+                        <input type="radio" id="bar" name="facilities-options" value="bar">
+                        <label for="bar">Bar</label>
+                    </div>
+                    <div>112</div>
+                </div>
+
+                <div class="single-facilities-option">
+                    <div>
+                        <input type="radio" id="childrensarea" name="facilities-options" value="childrensarea">
+                        <label for="childrensarea">Children's area</label>
+                    </div>
+                    <div>115</div>
+                </div>
+
+                <img src="/assets/svg/arrowdown2.svg" alt="arrowdown2"> 
+            </div>
+        </div>
+
+        <div class="type-of-hotel">
+            <div class="header">Type of hotel</div>
+            <div class="type-of-hotel-options">
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="model" name="type-of-hotel-options" value="model">
+                        <label for="model">Motel</label>
+                    </div>
+                    <div>135</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="resort" name="type-of-hotel-options" value="resort">
+                        <label for="resort">Resort</label>
+                    </div>
+                    <div>37</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="inn" name="type-of-hotel-options" value="inn">
+                        <label for="inn">Inn</label>
+                    </div>
+                    <div>45</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="allsuite" name="type-of-hotel-options" value="allsuite">
+                        <label for="allsuite">All-suite</label>
+                    </div>
+                    <div>89</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="conferencecenter" name="type-of-hotel-options" value="conferencecenter">
+                        <label for="conferencecenter">Conference center</label>
+                    </div>
+                    <div>112</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="extendedstay" name="type-of-hotel-options" value="extendedstay">
+                        <label for="extendedstay">Extended stay</label>
+                    </div>
+                    <div>55</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="boutique" name="type-of-hotel-options" value="boutique">
+                        <label for="boutique">Boutique</label>
+                    </div>
+                    <div>66</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="bunkhouse" name="type-of-hotel-options" value="bunkhouse">
+                        <label for="bunkhouse">Bunkhouse</label>
+                    </div>
+                    <div>210</div>
+                </div>
+
+                <div class="single-type-of-hotel-option">
+                    <div>
+                        <input type="radio" id="bedbreakfasts" name="type-of-hotel-options" value="bedbreakfasts">
+                        <label for="bedbreakfasts">Bed and breakfasts</label>
+                    </div>
+                    <div>99</div>
+                </div>
+
+                <img src="/assets/svg/arrowdown2.svg" alt="arrowdown2">
+            </div>
+        </div>
+
+        <div class="chain-hotels">
+            <div class="header">Type of hotel</div>
+            <div class="chain-hotels-options">
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="sapphiresuites" name="chain-hotels-options" value="sapphiresuites">
+                        <label for="sapphiresuites">Sapphire Suites</label>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="oceanviewhotel" name="chain-hotels-options" value="oceanviewhotel">
+                        <label for="oceanviewhotel">Ocean View Hotel</label>
+                    </div>
+                    <div>2</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="sunflowerresort" name="chain-hotels-options" value="sunflowerresort">
+                        <label for="sunflowerresort">Sunflower Resort</label>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="starlightlodge" name="chain-hotels-options" value="starlightlodge">
+                        <label for="starlightlodge">Starlight Lodge</label>
+                    </div>
+                    <div>3</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="paradiseplaza" name="chain-hotels-options" value="paradiseplaza">
+                        <label for="paradiseplaza">Paradise Plaza</label>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="goldensandsinn" name="chain-hotels-options" value="goldensandsinn">
+                        <label for="goldensandsinn">Golden Sands Inn</label>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="moonlightmanor" name="chain-hotels-options" value="moonlightmanor">
+                        <label for="moonlightmanor">Moonlight Manor</label>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="sunsetsuites" name="chain-hotels-options" value="sunsetsuites">
+                        <label for="sunsetsuites">Sunset Suites</label>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="single-chain-hotels-option">
+                    <div>
+                        <input type="radio" id="skylinehotel" name="chain-hotels-options" value="skylinehotel">
+                        <label for="skylinehotel">Skyline Hotel</label>
+                    </div>
+                    <div>1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

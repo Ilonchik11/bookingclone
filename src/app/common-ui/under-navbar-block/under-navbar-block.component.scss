@@ -1,0 +1,81 @@
+.startPagePhoto {
+    height: 220px;
+    margin-bottom: 15px;
+    width: 100%; 
+}
+
+.small-book-info {
+    align-items: center;
+    background-color: var(--light-color); 
+    border: 1px solid #DDDDDD;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    font-family: "Nunito Sans";
+    height: 64px;
+    justify-content: space-between;
+    min-width: 1034px;
+    padding: 0 10px 0 60px;
+    position: absolute;
+    top: 250px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 836px); 
+    //max-width: 1184px; 
+}
+
+.info-section {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.info-section img {
+    height: 24px;
+    width: 24px;
+}
+
+.info-section p {
+    line-height: 21px;
+    margin: 0;
+}
+
+.info-section .divider {
+    color: #DDDDDD;
+    font-size: 39px;
+}
+
+.info-section .search-icon {
+    height: 48px;
+    width: 48px;
+}
+
+/* Медиа-запросы для адаптации под различные размеры экранов */
+
+@media (max-width: 1920px) {
+    .small-book-info {
+        width: calc(100% - 736px); 
+    }
+}
+
+@media (max-width: 1366px) {
+    .small-book-info {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 768px) {
+    .small-book-info {
+        width: calc(100% - 40px); 
+        flex-direction: column;
+        bottom: 0;
+        transform: translateX(-50%) translateY(20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .register-btn, .signIn-btn {
+        padding: 5px;
+    }
+}

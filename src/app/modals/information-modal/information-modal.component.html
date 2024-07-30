@@ -1,0 +1,55 @@
+<div class="modal" *ngIf="isVisible">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">
+        <img src="/assets/svg/closeModal.svg" alt="closeModal">
+      </span>
+      <div class="header">Information</div>
+      <div class="underText">Tell us about yourself so we can better choose options for you :) </div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div>
+            <select id="country" formControlName="country">
+                <option value="" disabled selected>Country</option>
+              <option *ngFor="let country of countries" [value]="country" aria-placeholder="Country">
+                {{ country }}
+              </option>
+            </select>
+          </div>
+        
+          <div>
+            <select id="city" formControlName="city">
+                <option value="" disabled selected>City</option>
+              <option *ngFor="let city of cities" [value]="city">
+                {{ city }}
+              </option>
+            </select>
+          </div>
+        
+          <div>
+            <select id="whyTravel" formControlName="whyTravel">
+                <option value="" disabled selected>Why do you travel?</option>
+              <option *ngFor="let reason of travelReasons" [value]="reason">
+                {{ reason }}
+              </option>
+            </select>
+          </div>
+        
+          <div class="underText">Travelling with a pet?<div>
+            </div>
+            <div class="radio-btn">
+              <div>
+                <input type="radio" id="yes" formControlName="travellingWithPet" value="yes">
+                <label for="yes">Yes</label>
+              </div>
+                <div>
+                    <input type="radio" id="no" formControlName="travellingWithPet" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+          </div>
+        <button type="submit" class="continue-btn" (click)="navigateToAllDone()"
+        [disabled]="!this.form.valid" [ngClass]="{'active-button': this.form.valid, 'inactive-button': !this.form.valid}"
+        >Continue</button>
+        <button type="submit" class="later-btn" (click)="navigateToAllDone()">Later</button>
+      </form>   
+    </div>
+  </div>

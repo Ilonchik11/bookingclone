@@ -1,0 +1,37 @@
+<div class="modal" *ngIf="isVisible">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">
+        <img src="/assets/svg/closeModal.svg" alt="closeModal">
+      </span>
+      <div class="header">Sign In</div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <input type="text" id="username" name="email" formControlName="email" placeholder="Email" required>
+        </div>
+        <div>
+          <input type="password" id="password" name="password" formControlName="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="continue-btn"
+        [disabled]="!this.form.valid" [ngClass]="{'active-button': this.form.valid, 'inactive-button': !this.form.valid}"
+        >Continue</button>
+      </form>
+      <div class="go-to-register-txt">
+        Do not have an account? <a (click)="navigateToRegister()" style="color: var(--purple-color); cursor: pointer;">Register</a>
+      </div>
+      <div class="alternative-login">
+        <button (click)="loginWithGoogle()">
+          <img src="/assets/svg/logos-google.svg" alt="logos-google">
+          Sign In with Google
+        </button>
+        <button (click)="loginWithFacebook()">
+          <img src="/assets/svg/logos-facebook.svg" alt="logos-facebook">
+          Sign In with Facebook
+        </button> 
+        <button (click)="loginWithApple()">
+          <img src="/assets/svg/logos-apple.svg" alt="logos-apple">
+          Sign In with Apple
+        </button>
+      </div>      
+    </div>
+  </div>
+  

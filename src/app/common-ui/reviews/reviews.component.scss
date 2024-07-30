@@ -1,0 +1,79 @@
+.info-block {
+    align-items: center; 
+    display: flex;
+    flex-direction: column; 
+    font-family: "Nunito Sans";
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 1184px; 
+    width: 100%; 
+}
+
+.info-block p {
+    color: #717171;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px;
+    margin: 0; 
+    text-align: left; 
+}
+
+.small-block {
+    border: 1px solid #94D0B4;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 168px;
+    justify-content: flex-start;
+    padding: 20px 32px;
+    text-align: left;
+    width: 304px;
+}
+
+.review-text {
+    color: #222222;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px;
+}
+
+.info-block-content {
+    align-items: flex-start; 
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1184px;
+    width: 100%; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header img {
+    margin-right: 10px;
+}
+
+.name-info {
+    flex-grow: 1;
+}
+
+.date {
+    color: #717171;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    text-align: right;
+}
+
+.bold-name {
+    font-weight: 700;
+}
+
+.hotel-name {
+    color: #717171;
+}

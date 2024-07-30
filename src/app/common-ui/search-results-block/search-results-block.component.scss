@@ -1,0 +1,170 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+    gap: 20px;
+}
+
+.hotel-container {
+    border: 1px solid var(--light-gray-color);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+    position: relative;
+    width: 880px;
+}
+
+.hotel-container img {
+    height: 320px;
+    width: 320px;
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px 20px 50px 20px;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.28px;
+    text-align: left;
+}
+
+.hotel-stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.hotel-stars img {
+    height: 16px;
+    margin-right: 5px;
+    width: 16px;
+}
+
+.icons-block {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //margin-top: 10px;
+    width: 345px;
+}
+
+.icons-block img, .see-map img {
+    height: 24px;
+    width: 24px;
+}
+
+.common-text {
+    color: var(--gray-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    text-align: left;
+}
+
+.transport-distance, .see-map {
+    color: var(--text-black-color);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 21.82px;
+    text-align: left;
+}
+
+.transport-distance {
+    width: 274px;
+}
+
+.see-map {
+    width: 150px;
+}
+
+.description {
+    width: 345px;
+}
+
+.reviews-prices {
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 740px;
+    position: absolute;
+    top: 20px;
+}
+
+.rate {
+    border: 1px solid var(--purple-color);
+    border-radius: 50%;
+    color: var(--purple-color);
+    font-size: 20px;
+    font-weight: 400;
+    height: 38px;
+    line-height: 27.28px;
+    padding-top: 10px;
+    text-align: center;
+    width: 48px;
+}
+
+.reviews, .price {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.upper-part img {
+    height: 17px;
+    width: 17px;
+}
+
+.price-from {
+    color: var(--text-black-color);
+}
+
+.price button {
+    background-color: var(--purple-color);
+    border: none;
+    border-radius: 100px;
+    color: var(--light-color);
+    cursor: pointer;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 21.82px;
+    text-align: center;
+    width: 112px;
+}
+
+.digit {
+    color: var(--purple-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.28px;
+    text-align: center;
+}
+
+.extra {
+    box-shadow: 0px 0px 7px 0px #581ADB;
+}
+
+.circle-rate {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

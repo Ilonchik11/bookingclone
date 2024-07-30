@@ -1,0 +1,179 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+}
+
+.see-map {
+    align-items: center;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 30px;
+    color: var(--red-color);
+    display: flex;
+    flex-direction: row;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 5px 0 25px;
+    width: 241px;
+}
+
+.options {
+    border: 1px solid var(--light-gray-color);
+    border-radius: 13px;
+    color: var(--gray-color);
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    height: 1772px;
+    text-align: left;
+    width: 272px;
+}
+
+.header {
+    color: var(--gray-color);
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.82px;
+    text-align: left;
+}
+
+.price {
+    border-bottom: 1px solid var(--light-gray-color);
+    display: flex;
+    flex-direction: column;
+    // font-weight: 700;
+    height: 80px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.range {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    justify-content: space-between;
+}
+
+.slider-container {
+    width: 100%;
+    height: 30px;
+    position: relative;
+  }
+  
+  .slider-track {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slider-thumb {
+    background-color: var(--light-color);
+    border: 1.5px solid var(--gray-color);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+  }
+  
+  .attractions, .rating, .popular, .stars, .near, .facilities, .type-of-hotel, .chain-hotels {
+    border-bottom: 1px solid var(--light-gray-color);
+    height: 50px;
+    padding: 20px;
+  }
+
+  .attractions {
+    height: 50px;
+  }
+
+  .search-attractions {
+    align-items: center;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 21.82px;
+    padding: 10px 24px 10px 24px;
+    width: 176px;
+  }
+
+  .rating {
+    height: 140px;
+  }
+
+  .rating-options, .popular-options, .stars-options, .near-options, .facilities-options, 
+  .type-of-hotel-options, .chain-hotels-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .single-rating-option, .single-popular-option, .single-stars-option, .single-near-option, 
+  .single-facilities-option, .single-type-of-hotel-option, .single-chain-hotels-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popular {
+    height: 110px;
+  }
+
+  .stars-options {
+    gap: 0;
+    margin-top: 5px;
+  }
+
+  .stars {
+    height: 160px;
+  }
+
+  .stars-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .stars-row label {
+    padding-top: 5px;
+  }
+
+  .near {
+    height: 100px;
+  }
+
+  .facilities {
+    height: 210px;
+  }
+
+  .facilities-options img, .type-of-hotel-options img {
+    height: 24px;
+    margin-left: 7px;
+    width: 24px;
+  }
+
+  .type-of-hotel {
+    height: 290px;
+  }
+
+  .chain-hotels {
+    border-bottom: none;
+    height: 250px;
+  }

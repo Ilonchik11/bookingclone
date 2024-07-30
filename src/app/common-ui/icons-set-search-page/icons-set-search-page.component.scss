@@ -1,0 +1,23 @@
+.icons-set {
+    color: #717171;
+    display: flex;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 400;
+    gap: 100px;
+    height: 48px;
+    justify-content: center;
+    margin: 50px;
+}
+
+.icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon img {
+    display: block;
+    margin-bottom: 13px;
+}

@@ -1,0 +1,11 @@
+<div class="modal" *ngIf="isVisible">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">
+        <img src="/assets/svg/closeModal.svg" alt="closeModal">
+      </span>
+      <div class="header">All done!</div>
+      <img src="/assets/svg/alldone.svg" alt="alldone" class="center-img">
+      <button class="check-btn" (click)="closeModal()">Check your profile</button>
+        <button class="continue-btn" (click)="closeModal()">Continue booking</button>  
+    </div>
+  </div>

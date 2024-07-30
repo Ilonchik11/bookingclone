@@ -1,0 +1,59 @@
+.hotels-row {
+    display: flex;
+    font-family: "Nunito Sans";
+    gap: 15px;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.single-hotel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hotel-stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.hotel-pic {
+    position: relative;
+}
+
+.star-hotel {
+    height: 24px;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+    width: 24px;
+}
+
+.dots-pics {
+    bottom: 20px;
+    display: flex;
+    gap: 8px;
+    left: 100px;
+    position: absolute;
+}
+
+.hotel-info, .price, .city-center {
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    line-height: 21.82px;
+    text-align: left;
+}
+
+.hotel-info {
+    color: var(--text-black-color);
+    font-weight: 600;
+}
+
+.city-center {
+    color: var(--gray-color);
+    font-weight: 400;
+}
+
+.price {
+    font-weight: 800;
+}
